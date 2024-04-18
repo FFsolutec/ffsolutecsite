@@ -1,0 +1,41 @@
+button {
+  color: $P1;
+}
+
+// .btn-lr {
+//   color: $TPrimary;
+//   font-size: 0.875rem;
+//   font-weight: 700;
+//   line-height: 1.4375rem;
+//   text-align: center;
+//   padding: 10px 40px;
+//   border: 1px solid $P1;
+//   border-radius: 25px;
+//   text-wrap: nowrap;
+
+//   &:hover {
+//     border-color: $P4;
+//     color: $P1;
+//     cursor: pointer;
+//   }
+// }
+
+.btn-lr {
+  color: $TPrimary;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.4375rem;
+  text-align: center;
+  padding: 10px 40px;
+  border: 1px solid $B1;
+  border-radius: 10px;
+  text-wrap: nowrap;
+  background: none;
+  &:hover {
+    background: $B1;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+

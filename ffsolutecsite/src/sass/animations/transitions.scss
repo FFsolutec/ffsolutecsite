@@ -1,0 +1,90 @@
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes slideDownIn {
+	0% {
+		margin-top: -80px;
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+
+@keyframes slideUpIn {
+	0% {
+		margin-top: 150px;
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+
+@keyframes rotateLeft {
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes rotateRigth {
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-180deg);
+	}
+}
+
+@keyframes rotateLeft {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotateRight {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-180deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@mixin sTransition() {
+	transition: 0.3s ease all;
+}
+
+@mixin infiniteAnimation($animationName) {
+	animation: $animationName 600ms infinite linear;
+}

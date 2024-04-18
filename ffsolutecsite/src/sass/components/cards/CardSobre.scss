@@ -1,0 +1,116 @@
+.CardSobre{
+    width: 100%;
+    gap: 40px;
+    .projeto{
+      width: 100%;
+      max-width: 600px;
+        gap: 20px;
+        .title{
+          color: white;
+          font-size: 38px;
+          font-weight: 900;
+          text-transform: uppercase;
+          line-height: 1.1;
+          
+        }
+        .subTitle{
+          color: white;
+          font-size: 20px;
+          font-weight: 800;
+          text-transform: none;
+          line-height: 1.1;
+         
+        }
+        .listItens{
+          width: 100%;
+    
+          gap: 35px;
+            .itens{
+              width: 100%;
+              
+              gap: 20px;
+              .itensImg{
+                width: 30px;
+              }
+              .itensText{
+                color: white;
+                font-size: 20px;
+                font-weight: 500;
+                text-transform: uppercase;
+                line-height: 1.1;
+              }
+            }
+            .sobre{
+              color: white;
+            }
+            .infoContato{
+            
+              .infoEmail{
+                width: 100px;
+                gap: 20px;
+                .emailTitle{
+                  color: white;
+                  font-size: 20px;
+                  font-weight: 500;
+                  text-transform: capitalize;
+                  line-height: 1.1;
+                }
+                .emailSubtitle{
+                  color: white;
+                  font-size: 15px;
+                  font-weight: 500;
+                  text-transform: capitalize;
+                  line-height: 1.1;
+                }
+              }
+              .infoPhone{
+                width: 100px;
+                gap: 20px;
+                .phoneTitle{
+                  color: white;
+                  font-size: 20px;
+                  font-weight: 500;
+                  text-transform: capitalize;
+                  line-height: 1.1;
+                }
+                .phoneSubtitle{
+                  color: white;
+                  font-size: 15px;
+                  font-weight: 500;
+                  text-transform: capitalize;
+                  line-height: 1.1;
+                }
+              }
+            }
+            .contato{
+
+              .redesSociais{
+                gap: 20px;
+                .imgRedeSocial{
+                 
+                  border-radius: 50px;
+                  padding: 0.5px;
+                  background-color: white;
+                  width: 35px;
+                  height: 35px;
+                }
+              }
+              .buttonContato{
+                width: 250px;
+                background-color: #2F2F37;
+                border-radius: 10px;
+                box-shadow: 0;
+                padding: 0;
+                border: none;
+                color: white;
+              }
+
+            }
+           
+        }
+    }
+    .imgContent{
+      width: 100%;
+      max-width: 500px;
+    }
+  }

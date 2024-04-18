@@ -1,0 +1,51 @@
+.CardInformacoes{
+    width: 100%;
+    gap: 40px;
+    .projeto{
+      width: 100%;
+      max-width: 600px;
+        gap: 20px;
+        .title{
+          color: white;
+          font-size: 38px;
+          font-weight: 900;
+          text-transform: uppercase;
+          line-height: 1.1;
+          
+        }
+        .subTitle{
+          color: white;
+          font-size: 20px;
+          font-weight: 800;
+          text-transform: none;
+          line-height: 1.1;
+         
+        }
+        .listItens{
+          
+       
+          gap: 20px;
+            .itens{
+              width: 100%;
+              border: 1px solid white;
+              border-radius: 10px;
+              padding: 10px;
+              gap: 20px;
+              .itensImg{
+                width: 20px;
+              }
+              .itensText{
+                color: white;
+                font-size: 15px;
+                font-weight: 500;
+                text-transform: uppercase;
+                line-height: 1.1;
+              }
+            }
+        }
+    }
+    .imgContent{
+      width: 100%;
+      max-width: 500px;
+    }
+  }

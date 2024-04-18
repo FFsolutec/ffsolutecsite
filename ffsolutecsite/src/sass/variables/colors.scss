@@ -1,0 +1,51 @@
+$Primary: #4c813b;
+$P1: #4c813b;
+$P2: #609250;
+$P3: #75a565;
+$P4: #91be81;
+$Secondary: #1f376b;
+$S1: #1f376b;
+$S2: #2b447a;
+$S3: #4d669b;
+$S4: #788ebe;
+$TPrimary: #282828;
+$TSecondary: #5d5d5d;
+$B1: #282828;
+$B2: #3d3d3d;
+$B3: #575757;
+$B4: #7c7c7c;
+$B5: #b6b6b6;
+$Third: #dddddd;
+$Fourth: #f0efef;
+$Fiveth: #f8f5f5;
+$color1: #005072;
+$color1half: #00577c;
+$color12: #0094b2;
+$color12half: #01bade;
+$color12secondhalf: rgb(2, 116, 165);
+$color13: #81fbef;
+$color14: #e4fcff;
+$color2: #aa1e05;
+$color22: #f66e3d;
+$color23: #fa9b42;
+$color24: #fbaf68;
+$color25: #ffc895;
+
+$openedMenuSideBar: 160px;
+$closedMenuSideBar: 60px;
+
+body {
+  --Primary: #{$Primary};
+  --Secondary: #{$Secondary};
+  --Third: #{$Third};
+  --Fourth: #{$Fourth};
+  --Fiveth: #{$Fiveth};
+  --color1: #{$color1};
+  --color12: #{$color12};
+  --color13: #{$color13};
+  --color14: #{$color14};
+  --color2: #{$color2};
+  --color22: #{$color22};
+  --color23: #{$color23};
+  --color24: #{$color24};
+}

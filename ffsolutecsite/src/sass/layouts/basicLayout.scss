@@ -1,0 +1,23 @@
+.layout{
+    height: 100vh;
+    overflow: scroll;
+   
+    background:
+    linear-gradient(
+      rgba(0,0,0,.75),rgba(0,0,0,0.95)
+    ),
+    url("/imgs/background.webp") no-repeat;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    scrollbar-width: none;
+    /* Para ocultar a barra de rolagem no Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    
+
+  
+
+
+}
+

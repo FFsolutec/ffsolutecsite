@@ -1,0 +1,19 @@
+@mixin responsive($size) {
+  @if ($size == "xs") {
+    @media (max-width: 500px) {
+      @content;
+    }
+  } @else if($size == "sm") {
+    @media (max-width: 1224px) {
+      @content;
+    }
+  } @else if($size == "md") {
+    @media (max-width: 1600px) {
+      @content;
+    }
+  } @else if($size == "lg") {
+    @media (min-width: 2000px) {
+      @content;
+    }
+  }
+}
