@@ -1,18 +1,18 @@
 @mixin responsive($size) {
   @if ($size == "xs") {
-    @media (max-width: 500px) {
+    @media (max-width: 460px) {
       @content;
     }
   } @else if($size == "sm") {
-    @media (max-width: 1224px) {
+    @media (max-width: 760px) {
       @content;
     }
   } @else if($size == "md") {
-    @media (max-width: 1600px) {
+    @media (max-width: 960px) {
       @content;
     }
   } @else if($size == "lg") {
-    @media (min-width: 2000px) {
+    @media (min-width: 1280px) {
       @content;
     }
   }
