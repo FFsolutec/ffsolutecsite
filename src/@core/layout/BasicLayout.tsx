@@ -1,13 +1,11 @@
-// import { Footer } from "../components/Footer";
-// import Menu from "../components/Menu";
+import Menu from "../componentes/Menu";
 import { BlankLayoutProps } from "./types";
 
 const BasicLayout = ({ children }: BlankLayoutProps) => {
   return (
-    <div className="layout d-flex a-c f-c j-sb">
-      {/* <Menu /> */}
+    <div className="layout d-flex a-c f-c j-s">
+      <Menu />
       {children}
-      {/* <Footer /> */}
     </div>
   );
 };

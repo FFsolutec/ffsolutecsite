@@ -1,0 +1,48 @@
+.card-header{
+    
+    .ffsolutec{
+        font-size: 4rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 900;
+        width: 300px
+    }
+    .img-background-card-header{
+        width: 260px;
+        
+    }
+    .redirect-links{
+        width: 380px;
+        .redirect-first{
+            width: auto;
+            font-size: 3rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 900;
+        }
+        .redirect-button{
+            color: white;
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 0px 15px;
+            border: 1px solid white;
+            border-radius: 10px;
+            text-wrap: nowrap;
+            background: none;
+            height: 45px;
+            &:hover {
+              background: white;
+              color: black;
+              cursor: pointer;
+            }   
+        }
+        .redirect-second{
+            width: 100%;
+            font-size: 3rem;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+    }
+}
