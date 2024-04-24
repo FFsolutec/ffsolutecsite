@@ -30,6 +30,27 @@
                 font-weight: 600;
                 
             }
+           
         }
+        .contact-me{
+                
+            color: white;
+            font-size: 0.875rem;
+            font-weight: 700;
+            line-height: 1.4375rem;
+            text-align: center;
+            padding: 10px 40px;
+            border: 1px solid white;
+            border-radius: 10px;
+            text-wrap: nowrap;
+            background: none;
+            &:hover {
+              background: white;
+              color: black;
+              cursor: pointer;
+            }
+          
+          
+    }
     }
 }
