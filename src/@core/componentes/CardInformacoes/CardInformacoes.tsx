@@ -1,7 +1,7 @@
-const CardInformacoes = () => {
+const CardInformacoes = ({ reverse }: { reverse?: string }) => {
   return (
-    <div className="CardInformacoes d-flex f-sb a-c j-c">
-      <div className="projeto  d-flex f-sb a-s j-c f-c">
+    <div className={`CardInformacoes d-flex f-sb a-c j-c ${reverse}`}>
+      <div className={`projeto  d-flex f-sb a-s j-c f-c `}>
         <p className="title">
           A FFsolutec foi projetada para atender empresas como a sua.
         </p>

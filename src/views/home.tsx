@@ -10,6 +10,15 @@ const HomePageView = () => {
         <CardHeader />
         <CardInformacoes />
         <CardSobre />
+
+        <div className="d-flex f-wrap w-100 j-sb a-c section-titles">
+          <div className="d-flex f-c a-s j-c titles">
+            <h3 className="subTitle">SERVIÇoS</h3>
+            <h1 className="title">CONHEÇA NOSSOS SERVIÇOS</h1>
+          </div>
+          <button className="viewAll">Todo os serviços</button>
+        </div>
+        <CardInformacoes />
       </div>
     </div>
   );
