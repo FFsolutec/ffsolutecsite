@@ -1,10 +1,12 @@
-.CardInformacoes{
+.CardServicos{
     width: 100%;
     gap: 40px;
     padding: 50px 0px;
+    height: 100%;
+    position: relative;
     .projeto{
       width: 100%;
-      max-width: 600px;
+      max-width: 550px;
         gap: 20px;
         .title{
           color: white;
@@ -23,7 +25,7 @@
          
         }
         .listItens{
-          
+            width: 100%;
        
           gap: 20px;
             .itens{
@@ -48,15 +50,20 @@
     .imgContent{
       width: 100%;
       max-width: 500px;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 40px 40px 0px 40px
     }
-    @media (max-width: 999px) {
-      flex-direction: column-reverse;
-      .imgContent,.projeto{
+
+      @media (max-width: 999px) {
+        flex-direction: column-reverse;
+        .imgContent,.projeto{
         
-        max-width: 100%;
+          max-width: 100%;
+        }
+        
       }
-      
-    }
     
   }
 

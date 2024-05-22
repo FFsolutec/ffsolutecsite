@@ -1,9 +1,15 @@
 .home{
     width: 100%;
-    
+    gap: 50px;
     .container{
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         max-width: 1280px;
+        @media (max-width: 1310px) {
+            padding: 60px;
+        }
     }
-  
+    
 }

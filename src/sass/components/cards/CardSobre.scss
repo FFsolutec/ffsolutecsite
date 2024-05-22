@@ -1,13 +1,14 @@
 .CardSobre{
     width: 100%;
     gap: 40px;
+    padding: 50px 0px;
     .projeto{
       width: 100%;
       max-width: 600px;
         gap: 20px;
         .title{
           color: white;
-          font-size: 38px;
+          font-size: 35px;
           font-weight: 900;
           text-transform: uppercase;
           line-height: 1.1;
@@ -15,8 +16,8 @@
         }
         .subTitle{
           color: white;
-          font-size: 20px;
-          font-weight: 800;
+          font-size: 18px;
+          font-weight: 600;
           text-transform: none;
           line-height: 1.1;
          
@@ -112,5 +113,13 @@
     .imgContent{
       width: 100%;
       max-width: 500px;
+    }
+    @media (max-width: 999px) {
+      flex-direction: column;
+      .imgContent,.projeto{
+        
+        max-width: 100%;
+      }
+      
     }
   }

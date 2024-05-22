@@ -1,8 +1,8 @@
 const CardSobre = () => {
   return (
-    <div className="CardSobre d-flex f-sb a-c j-c">
+    <div className="CardSobre d-flex j-sb a-c j-c">
       <img className="imgContent" src="/imgs/sobre.png" />
-      <div className="projeto  d-flex f-sb a-s j-c f-c">
+      <div className="projeto  d-flex j-c a-s  f-c">
         <div className="listItens d-flex  f-c">
           <div className="itens d-flex a-c ">
             <img src="/imgs/Icon.png" className="itensImg" />
