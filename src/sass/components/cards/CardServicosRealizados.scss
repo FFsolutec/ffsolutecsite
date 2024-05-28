@@ -1,0 +1,51 @@
+.CardServicosRealizados {
+    width: 400px;
+    position: relative;
+    transition: width 2s; /* Transição aplicada ao próprio card, se necessário */
+  
+    .imgServicoRealizado {
+      width: 100%;
+      max-width: 400px;
+      height: 300px;
+      object-fit: fill;
+      object-position: center;
+      border-radius: 25px;
+    }
+  
+    .descricaoServicoRealizado {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      background: red;
+      width: 100%;
+      height: 100%;
+      opacity: 0; /* Inicialmente invisível */
+      visibility: hidden; /* Inicialmente invisível */
+      transition: opacity 2s ease, visibility 2s ease; /* Transição aplicada às propriedades visíveis */
+    }
+  }
+  
+  .CardServicosRealizados:hover .descricaoServicoRealizado {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .CardServicosRealizados {
+      width: 100%; /* Ajusta a largura para ocupar 100% do container pai */
+    }
+  
+    .imgServicoRealizado {
+      height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    }
+  
+    .descricaoServicoRealizado {
+      height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    }
+  }
+  

@@ -1,6 +1,7 @@
 import CardHeader from "@/@core/componentes/CardHeader";
 import CardInformacoes from "@/@core/componentes/CardInformacoes/CardInformacoes";
 import CardServicos from "@/@core/componentes/CardServicos";
+import CardServicosRealizados from "@/@core/componentes/CardServicosRealizados";
 import CardSobre from "@/@core/componentes/CardSobre";
 import Menu from "@/@core/componentes/Menu";
 
@@ -20,6 +21,7 @@ const HomePageView = () => {
           <button className="viewAll">Todo os serviços</button>
         </div>
         <CardServicos />
+        <CardServicosRealizados />
       </div>
     </div>
   );
