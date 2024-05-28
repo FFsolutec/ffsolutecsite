@@ -21,7 +21,18 @@ const HomePageView = () => {
           <button className="viewAll">Todo os serviços</button>
         </div>
         <CardServicos />
-        <CardServicosRealizados />
+        <CardServicosRealizados
+          description="Serviço... realizado"
+          title="Akke Beneficios"
+        />
+        <CardServicosRealizados
+          description="Serviço... realizado"
+          title="Integração"
+        />
+        <CardServicosRealizados
+          description="Serviço... realizado"
+          title="Boot Geek"
+        />
       </div>
     </div>
   );
