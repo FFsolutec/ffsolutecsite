@@ -1,5 +1,9 @@
 .card-header{
     padding: 50px 0px;
+    height: 400px;
+    width: 100%;
+    max-width: 1280px;
+    gap: 40px;
     .ffsolutec{
         font-size: 4rem;
         color: white;
@@ -12,10 +16,12 @@
         
     }
     .redirect-links{
-        width: 380px;
+        width: 100%;
+        max-width: 400px;
+        gap: 10px;
         .redirect-first{
             width: auto;
-            font-size: 3rem;
+            font-size: 2rem;
         color: white;
         text-transform: uppercase;
         font-weight: 900;
@@ -25,12 +31,13 @@
             font-size: 0.875rem;
             font-weight: 700;
             text-align: center;
-            padding: 0px 15px;
+            
             border: 1px solid white;
             border-radius: 10px;
             text-wrap: nowrap;
-            background: none;
-            height: 45px;
+            background: white;
+            height: 30px;
+            width: 35px;
             &:hover {
               background: white;
               color: black;
@@ -39,10 +46,20 @@
         }
         .redirect-second{
             width: 100%;
-            font-size: 3rem;
+            font-size: 2rem;
             color: white;
             text-transform: uppercase;
             font-weight: 900;
         }
     }
+}
+
+@media (max-width: 1280px) {
+    .card-header{
+        padding: 50px;
+        .ffsolutec{
+            font-size: 3rem;
+        }
+    }
+   
 }

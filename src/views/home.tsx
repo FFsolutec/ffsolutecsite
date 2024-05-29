@@ -3,13 +3,140 @@ import CardInformacoes from "@/@core/componentes/CardInformacoes/CardInformacoes
 import CardServicos from "@/@core/componentes/CardServicos";
 import CardServicosRealizados from "@/@core/componentes/CardServicosRealizados";
 import CardSobre from "@/@core/componentes/CardSobre";
+import { Carousel } from "@/@core/componentes/Carroussel";
 import Menu from "@/@core/componentes/Menu";
+import Image from "next/image";
 
 const HomePageView = () => {
   return (
     <div className="home d-flex a-c j-s f-c">
+      <CardHeader />
+      <Carousel.Root>
+        <Carousel.Content>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+        </Carousel.Content>
+      </Carousel.Root>
+
       <div className="container">
-        <CardHeader />
         <CardInformacoes />
         <CardSobre />
 
@@ -21,19 +148,151 @@ const HomePageView = () => {
           <button className="viewAll">Todo os serviços</button>
         </div>
         <CardServicos />
-        <CardServicosRealizados
-          description="Serviço... realizado"
-          title="Akke Beneficios"
-        />
-        <CardServicosRealizados
-          description="Serviço... realizado"
-          title="Integração"
-        />
-        <CardServicosRealizados
-          description="Serviço... realizado"
-          title="Boot Geek"
-        />
+        <div className="d-flex f-wrap w-100 servicosRealizados">
+          <CardServicosRealizados
+            title="Akke Beneficios"
+            description="Serviço... realizado"
+            linkSite="#"
+            img="/servicos/bootGeek.png"
+          />
+          <CardServicosRealizados
+            title="Integração"
+            description="Serviço... realizado"
+            linkSite="#"
+            img="/servicos/bootGeek.png"
+          />
+          <CardServicosRealizados
+            title="Boot Geek"
+            linkSite="https://www.botgeek.com.br"
+            description="Desenvolvimento da page"
+            img="/servicos/bootGeek.png"
+          />
+        </div>
       </div>
+      <Carousel.Root>
+        <Carousel.Content>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/imgs/carroussel/imgTeste.png"
+              alt="eadtran - logo"
+              width={180}
+              height={30}
+            />
+          </Carousel.Item>
+        </Carousel.Content>
+      </Carousel.Root>
     </div>
   );
 };

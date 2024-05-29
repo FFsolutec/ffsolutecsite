@@ -2,17 +2,22 @@
     width: 400px;
     position: relative;
     transition: width 2s; /* Transição aplicada ao próprio card, se necessário */
-  
+  background-color: rgb(0, 0, 0);
+  padding: 0px 30px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 15px;
+  border-radius: 25px;
     .imgServicoRealizado {
       width: 100%;
       max-width: 400px;
       height: 300px;
-      object-fit: fill;
+      object-fit: contain;
       object-position: center;
       border-radius: 25px;
     }
   
     .descricaoServicoRealizado {
+        border-radius: 20px;
+        scale: 1.02;
       position: absolute;
       top: 0;
       left: 0;
@@ -25,14 +30,14 @@
       height: 100%;
       opacity: 0; /* Inicialmente invisível */
       visibility: hidden; /* Inicialmente invisível */
-      transition: opacity 2s ease, visibility 2s ease; /* Transição aplicada às propriedades visíveis */
+      transition: opacity 1s ease, visibility 1s ease; /* Transição aplicada às propriedades visíveis */
     }
   }
   
   .CardServicosRealizados:hover .descricaoServicoRealizado {
     opacity: 1;
     visibility: visible;
-    border-radius: 10px;
+   
   }
   
   @media (max-width: 600px) {

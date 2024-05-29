@@ -1,0 +1,78 @@
+.CarouselRoot {
+  position: relative;
+  background-color: black;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 15px;
+  .CarouselContent {
+    display: flex;
+    overflow: hidden;
+    gap: 50px;
+    &[data-orientation="horizontal"] {
+      margin-right: 1rem;
+    }
+
+    &[data-orientation="vertical"] {
+      margin-bottom: 1rem;
+      flex-direction: column;
+    }
+  }
+
+  .CarouselItem {
+    min-width: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: calc(100% / var(--carousel-items-visible, 1));
+    &[data-orientation="horizontal"] {
+      padding-left: 1rem;
+    }
+
+    &[data-orientation="vertical"] {
+      padding-top: 1rem;
+    }
+  }
+
+  .CarouselPrevious,
+  .CarouselNext {
+    all: unset;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    z-index: 10;
+    cursor: pointer;
+
+    &:disabled {
+      color: gray;
+    }
+
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+
+  .CarouselPrevious {
+    &[data-orientation="horizontal"] {
+      top: 50%;
+      left: 0.75rem;
+      transform: translateY(-50%);
+    }
+
+    &[data-orientation="vertical"] {
+      top: 0.75rem;
+      left: 50%;
+      transform: translateX(-50%) rotate(90deg);
+    }
+  }
+
+  .CarouselNext {
+    &[data-orientation="horizontal"] {
+      top: 50%;
+      right: 0.75rem;
+      transform: translateY(-50%);
+    }
+
+    &[data-orientation="vertical"] {
+      bottom: 0.75rem;
+      left: 50%;
+      transform: translateX(-50%) rotate(90deg);
+    }
+  }
+}

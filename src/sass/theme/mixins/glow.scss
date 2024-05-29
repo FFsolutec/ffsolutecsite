@@ -1,0 +1,4 @@
+@mixin glow($color: $primary) {
+    box-shadow: 0px 0px 5px 0px $color;
+    filter: brightness(1.10);
+}
