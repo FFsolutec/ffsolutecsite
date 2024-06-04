@@ -1,7 +1,9 @@
 .menu{
+    background-color: black;
     width: 100%;
-    border-bottom: 0.5px solid rgb(255, 255, 255);
+
     height: 100px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px;
     .links{
         width: 100%;
         max-width: 1280px;
@@ -9,8 +11,7 @@
             width: 100px;
         }
         .list-links{
-            border-left: 0.5px solid rgb(255, 255, 255);
-            border-right: 0.5px solid rgb(255, 255, 255);
+            
             width: 30%;
             gap:  25px;
             height: 100px;
@@ -24,7 +25,7 @@
                 
             }
             .link:hover{
-                color: rgb(255, 212, 85);
+                color: rgb(251, 237, 195);
                 font-size: 16px;
                 text-transform: uppercase;
                 font-weight: 600;
@@ -40,7 +41,7 @@
             line-height: 1.4375rem;
             text-align: center;
             padding: 10px 40px;
-            border: 1px solid white;
+            border: 1px solid rgba(255, 255, 255,0.2);
             border-radius: 10px;
             text-wrap: nowrap;
             background: none;

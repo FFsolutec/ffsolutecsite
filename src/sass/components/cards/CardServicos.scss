@@ -1,16 +1,17 @@
 .CardServicos{
     width: 100%;
-    gap: 40px;
+    gap: 50px;
     padding: 50px 0px;
     height: 100%;
     position: relative;
+    
     .projeto{
       width: 100%;
       max-width: 550px;
         gap: 20px;
         .title{
           color: white;
-          font-size: 35px;
+          font-size: 30px;
           font-weight: 900;
           text-transform: uppercase;
           line-height: 1.1;
@@ -18,7 +19,7 @@
         }
         .subTitle{
           color: white;
-          font-size: 18px;
+          font-size: 15px;
           font-weight: 600;
           text-transform: none;
           line-height: 1.1;

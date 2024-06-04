@@ -1,12 +1,8 @@
 .layout{
     height: 100vh;
     overflow: scroll;
-   
-    background:
-    linear-gradient(
-      rgba(0,0,0,.75),rgba(0,0,0,0.95)
-    ),
-    url("/imgs/background.webp") no-repeat;
+   width: 100%;
+    
 
     background-size: cover;
     background-repeat: no-repeat;
