@@ -4,7 +4,7 @@ const Menu = () => {
       <div className="links d-flex  d-flex a-c  j-sb">
         <img src="/imgs/logo.png" alt="logo" className="logo" />
         <div className="list-links d-flex a-c j-c ">
-          <a href="" className="link">
+          {/* <a href="" className="link">
             Sobre
           </a>
           <a href="" className="link">
@@ -18,7 +18,7 @@ const Menu = () => {
           </a>
           <a href="" className="link">
             Portifolio
-          </a>
+          </a> */}
         </div>
         <a
           className="contact-me"
