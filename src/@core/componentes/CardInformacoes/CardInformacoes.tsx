@@ -1,6 +1,6 @@
 const CardInformacoes = ({ reverse }: { reverse?: string }) => {
   return (
-    <div className={`CardInformacoes d-flex j-sb a-c j-c ${reverse}`}>
+    <div className={`CardInformacoes d-flex j-sb w-100 a-c j-c ${reverse}`}>
       <div className={`projeto  d-flex f-sb a-s j-c f-c `}>
         <p className="title">
           A FFsolutec foi projetada para atender empresas como a sua.

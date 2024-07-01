@@ -4233,16 +4233,25 @@ textarea.form-control-lg {
 }
 
 .card-header {
-  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+  
+  
   margin-bottom: 0;
   color: var(--bs-card-cap-color);
   background-color: var(--bs-card-cap-bg);
   border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  padding: 3rem;
+      height: 68vh;
 }
 .card-header:first-child {
   border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
 }
+.header-item{
 
+  background-image: linear-gradient(to left, rgba(2, 2, 2, 0.6), rgba(4, 4, 4, 1)), url("https://images.pexels.com/photos/21405528/pexels-photo-21405528/free-photo-of-mulher-mesa-balcao-computador-portatil.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 .card-footer {
   padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
   color: var(--bs-card-cap-color);
@@ -10834,10 +10843,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("/imgs/background.webp");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  
 }
 
 p {
@@ -10886,7 +10892,7 @@ p {
   display: block;
   font-size: 3rem;
   font-weight: 100;
-  color: white;
+  color: black;
 }
 
 .bg-faded {
@@ -10933,7 +10939,7 @@ p {
 }
 
 .about-content{
-  background-color: rgb(150, 56, 122);
+  background-color: rgb(87, 26, 80);
 }
 .content-text{
   color: rgba(255, 255, 255, 0.9);
@@ -10955,17 +10961,17 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(86, 32, 70, 1);
+  background-color: black;
   border-radius: 10px;
 }
 .cta .cta-inner {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  border: 0.25rem solid rgba(255, 255, 255, 0.85);
-  background-color: rgba(150, 56, 122, 0.9);
+  border: 0.25rem solid rgba(black, 0.5);
+  background-color: white;
   .description{
-    color: rgba(255, 255, 255, 0.8);
+    color: black;
     font-weight: 600;
     
   }
@@ -10986,7 +10992,7 @@ p {
 }
 
 .footer {
-  background-color: rgba(86, 32, 70, 1);
+  background-color: black;
   .container{
     .small{color: white}
   }
@@ -10998,7 +11004,7 @@ p {
 }
 .intro-text{
   position:relative;
-  background-color: rgba(150 ,56 ,122,1);
+  background-color: rgba(black,1);
   
 }
 @media (min-width: 992px) {
@@ -11018,11 +11024,11 @@ p {
     border-radius: 7px;
     left: 31%;
     bottom: -2rem;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
     .button-contato{
-      background-color: rgba(86 ,32 ,70,1);
+      background-color: white;
       border: none;
-      color: white;
+      color: black;
     }
 }
 }

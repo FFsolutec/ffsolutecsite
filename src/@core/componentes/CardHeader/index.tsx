@@ -3,9 +3,15 @@ const CardHeader = () => {
     <div className=" card-header d-flex a-s j-c f-c">
       <h1 className="ffsolutec">FFsolutec</h1>
       <div className="redirect-links d-flex f-wrap">
-        <p className="redirect-first">Desperte </p>
-        <img className="redirect-button" src="/imgs/arrow-up-right.svg" />
-        <p className="redirect-second"> sua presença online!</p>
+        <p className="redirect-first">
+          Transformamos sua Visão em Realidade Digital{" "}
+        </p>
+
+        <p className="redirect-second">
+          {" "}
+          Especialistas em Marketing Digital, Desenvolvimento de Software,
+          Criação de Sites e Suporte WordPress.
+        </p>
       </div>
     </div>
   );

@@ -20,7 +20,14 @@ const Menu = () => {
             Portifolio
           </a>
         </div>
-        <button className="contact-me">Entre em contato</button>
+        <a
+          className="contact-me"
+          style={{ textDecoration: "none" }}
+          href="https://api.whatsapp.com/send?phone=5521999991286&amp;text=Bom%20dia%20gostaria%20de%20saber%20sobre%20os%20serviços%20da%20FFSOLUTEC!"
+          target="_blank"
+        >
+          Entre em contato
+        </a>
       </div>
     </div>
   );

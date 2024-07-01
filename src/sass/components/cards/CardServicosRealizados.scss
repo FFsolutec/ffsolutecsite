@@ -2,37 +2,79 @@
     width: 400px;
     position: relative;
     transition: width 2s; /* Transição aplicada ao próprio card, se necessário */
-  background-color: rgb(0, 0, 0);
-  padding: 0px 30px;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 15px;
-  border-radius: 25px;
-  
-    .imgServicoRealizado {
+    background-color: rgb(0, 0, 0);
+    padding: 0px 30px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 15px;
+    border-radius: 25px;
+    gap: 40px;
+    .area-img-servico {
       width: 100%;
       max-width: 400px;
       height: 300px;
-      object-fit: contain;
-      object-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 25px;
+      position: relative;
+      .imgServico{
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        z-index: 1;
+      }
+      .title-servico {
+           background: rgba(black, 0.5);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2rem;
+          text-align: center;
+          font-weight: 600;
+          text-transform: uppercase;
+      }
+    
     }
   
     .descricaoServicoRealizado {
+        z-index: 3;
         border-radius: 20px;
+        padding: 30px ;
         scale: 1.02;
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-      background: red;
-      width: 100%;
-      height: 100%;
-      opacity: 0; /* Inicialmente invisível */
-      visibility: hidden; /* Inicialmente invisível */
-      transition: opacity 1s ease, visibility 1s ease; /* Transição aplicada às propriedades visíveis */
-    }
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        width: 100%;
+        height: 100%;
+        opacity: 0; /* Inicialmente invisível */
+        visibility: hidden; /* Inicialmente invisível */
+        transition: opacity 1s ease, visibility 1s ease; /* Transição aplicada às propriedades visíveis */
+        color: white;
+        .titleServicoRealizado,.description{
+            color: white;
+            text-align: center;
+        }
+        .titleServicoRealizado{
+          font-size: 20px;
+        }
+        .description{
+          font-size: 13px;
+        }
+      }
   }
   
   .CardServicosRealizados:hover .descricaoServicoRealizado {

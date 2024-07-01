@@ -31,7 +31,7 @@ const CardSobre = () => {
           </div>
           <div className="contato d-flex j-sb">
             <div className="redesSociais d-flex">
-              <img
+              {/* <img
                 src="/imgs/redesSociais/facebook.png"
                 className="imgRedeSocial"
               />
@@ -42,9 +42,16 @@ const CardSobre = () => {
               <img
                 src="/imgs/redesSociais/twiter.png"
                 className="imgRedeSocial"
-              />
+              /> */}
             </div>
-            <button className="buttonContato">Contato</button>
+
+            <a
+              className="buttonContato"
+              href="https://api.whatsapp.com/send?phone=5521999991286&amp;text=Bom%20dia%20gostaria%20de%20saber%20sobre%20os%20serviços%20da%20FFSOLUTEC!"
+              target="_blank"
+            >
+              CONTATO
+            </a>
           </div>
         </div>
       </div>

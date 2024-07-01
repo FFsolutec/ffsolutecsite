@@ -1,3 +1,7 @@
+import CardHeader from "@/@core/componentes/CardHeader";
+import CardInformacoes from "@/@core/componentes/CardInformacoes/CardInformacoes";
+import CardServicosRealizados from "@/@core/componentes/CardServicosRealizados";
+import CardSobre from "@/@core/componentes/CardSobre";
 import { useEffect } from "react";
 
 const HomePageView = () => {
@@ -7,223 +11,14 @@ const HomePageView = () => {
     if (listHoursArray.length > 0) {
       listHoursArray[new Date().getDay()].classList.add("today");
     }
-  }, []); // O segundo argumento vazio [] garante que o efeito seja executado apenas uma vez após a montagem do componente
+  }, []);
 
   return (
-    // <div className="home d-flex a-c j-s f-c">
-    //   <CardHeader />
-
-    //   <div className="container">
-    //     <CardInformacoes />
-    //     <CardSobre />
-
-    //     <div className="d-flex w-100 section-titles f-c">
-    //       <div className="d-flex f-wrap w-100 j-sb a-c">
-    //         <div className="d-flex f-c a-s j-c titles">
-    //           <h3 className="subTitle">SERVIÇoS</h3>
-    //           <h1 className="title">Conheça nossos serviços</h1>
-    //         </div>
-    //         <button className="viewAll">Todo os serviços</button>
-    //       </div>
-    //       <CardServicos />
-    //     </div>
-
-    //     <div className="d-flex f-wrap w-100 servicosRealizados">
-    //       <CardServicosRealizados
-    //         title="Akke Beneficios"
-    //         description="Serviço... realizado"
-    //         linkSite="#"
-    //         img="/servicos/bootGeek.png"
-    //       />
-    //       <CardServicosRealizados
-    //         title="Integração"
-    //         description="Serviço... realizado"
-    //         linkSite="#"
-    //         img="/servicos/bootGeek.png"
-    //       />
-    //       <CardServicosRealizados
-    //         title="Boot Geek"
-    //         linkSite="https://www.botgeek.com.br"
-    //         description="Desenvolvimento da page"
-    //         img="/servicos/bootGeek.png"
-    //       />
-    //     </div>
-    //   </div>
-    //   {/* <Carousel.Root>
-    //     <Carousel.Content>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //       <Carousel.Item>
-    //         <Image
-    //           src="/imgs/carroussel/imgTeste.png"
-    //           alt="eadtran - logo"
-    //           width={180}
-    //           height={30}
-    //         />
-    //       </Carousel.Item>
-    //     </Carousel.Content>
-    //   </Carousel.Root> */}
-    // </div>
     <>
-      <div>
-        <h1 className="site-heading text-center text-faded d-none d-lg-block">
-          <span className="site-heading-upper  mb-3">
-            DESPERTE SUA PRESENÇA ONLINE!
-          </span>
-          <span className="site-heading-lower">FFsolutec</span>
-        </h1>
+      <div className="d-flex w-100 a-c j-c header-item">
+        <CardHeader />
       </div>
 
-      <nav className="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-        <div className="container">
-          <a
-            className="navbar-brand text-uppercase fw-bold d-lg-none"
-            href="index.html"
-          >
-            Start Bootstrap
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mx-auto">
-              <li className="nav-item px-lg-4">
-                <a className="nav-link text-uppercase" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item px-lg-4">
-                <a className="nav-link text-uppercase" href="/sobre">
-                  SOBRE
-                </a>
-              </li>
-              <li className="nav-item px-lg-4">
-                <a className="nav-link text-uppercase" href="#">
-                  SERVIÇOS
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
       <section className="page-section clearfix">
         <div className="container">
           <div className="intro">
@@ -234,7 +29,10 @@ const HomePageView = () => {
             />
             <div className="intro-text left-0 text-left bg-faded p-5 rounded">
               <h2 className="section-heading mb-3">
-                <span className="section-heading-lower">
+                <span
+                  className="section-heading-lower"
+                  style={{ color: "white" }}
+                >
                   A Solução Ideal para Sua Empresa
                 </span>
               </h2>
@@ -266,6 +64,13 @@ const HomePageView = () => {
           </div>
         </div>
       </section>
+
+      <section className="page-section w-100 cta">
+        <div className="container ">
+          <CardInformacoes />
+        </div>
+      </section>
+
       <section className="page-section cta">
         <div className="container">
           <div className="row">
@@ -292,6 +97,49 @@ const HomePageView = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="page-section  w-100 cta">
+        <div className="container ">
+          <CardSobre />
+        </div>
+      </section>
+
+      <section className="page-section w-100">
+        <div className="container  d-flex a-c j-sb servicosRealizados">
+          <CardServicosRealizados
+            title="APLICAÇÕES WEB RESPONSIVAS"
+            description="Na criação de sites, nosso design é limpo,focado na simplicidade e fácil de usar.
+Fale com um especialista agora mesmo"
+            linkSite="#"
+            img="https://images.pexels.com/photos/265667/pexels-photo-265667.jpeg"
+            servicos={[
+              "SUPORTE ESPECIALIZADO",
+              "LAYOUT PROFISSIONAL",
+              "TÉCNICAS DE STORYTELLING",
+              "ESTRATÉGIA OBJETIVA",
+            ]}
+          />
+          <CardServicosRealizados
+            title="Desenvolvimento de software"
+            description="Focados em trazer uma concepção, criação e implementação de softwares personalizados e visando atender às necessidades específicas dos clientes."
+            linkSite="#"
+            img="https://images.pexels.com/photos/1921326/pexels-photo-1921326.jpeg?auto=compress&cs=tinysrgb&w=600"
+            servicos={[
+              "Customização Personalizada",
+              "Processo de Desenvolvimento Colaborativo",
+              "Suporte Contínuo e Manutenção",
+              "Experiência e Expertise",
+            ]}
+          />
+          <CardServicosRealizados
+            title="Suporte"
+            linkSite="https:www.botgeek.com.br"
+            description="Conte com um Time de Especialistas para dar Suporte às suas Necessidades"
+            img="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=600"
+            servicos={["Wordpress", "Software", "SEO"]}
+          />
         </div>
       </section>
       <div className="footer text-faded text-center py-5">
