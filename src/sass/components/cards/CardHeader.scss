@@ -1,64 +1,107 @@
-.card-header{
-    padding: 50px 0px;
-    height: 400px;
+.header-List {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1280px;
+  padding: 20px;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+  .card-header {
+    padding: 20px 0px;
+
     width: 100%;
     max-width: 1280px;
-    gap: 5px;
- 
-    .ffsolutec{
-        font-size: 4rem;
-        color: white;
-        text-transform: uppercase;
-        font-weight: 900;
-        width: 300px
+    gap: 0px;
+
+    .welcome {
+      font-size: 1.8rem;
+      color: black;
+      font-family: "Montserrat ";
+      font-weight: 900;
+      width: 300px;
+      margin: 0px;
     }
-    .img-background-card-header{
-        width: 260px;
+
+    .ffsolutec {
+      font-size: 4.5rem;
+      color: black;
+      font-family: "Montserrat ";
+      font-weight: 900;
+      width: 300px;
     }
-    .redirect-links{
-        width: 100%;
-        gap: 0;
-        .redirect-first{
-            width: auto;
-            font-size: 1.5rem;
-        color: white;
-        text-transform: uppercase;
-        font-weight: 900;
-        }
-        .redirect-button{
-            color: white;
-            font-size: 0.875rem;
-            font-weight: 700;
-            text-align: center;
-            
-            border: 1px solid white;
-            border-radius: 10px;
-            text-wrap: nowrap;
-            background: white;
-            height: 30px;
-            width: 35px;
-            &:hover {
-              background: white;
-              color: black;
-              cursor: pointer;
-            }   
-        }
-        .redirect-second{
-            width: 100%;
-            font-size: 1rem;
-            color: white;
-            text-transform: uppercase;
-            font-weight: 900;
-        }
+    .img-background-card-header {
+      width: 260px;
     }
+    .redirect-links {
+      width: 90%;
+      gap: 0;
+      display: flex;
+      flex-direction: column;
+      .redirect-first {
+        width: 90%;
+        font-size: 1.3rem;
+        color: black;
+
+        font-family: "Montserrat ";
+        font-weight: 500;
+      }
+      .redirect-button {
+        color: black;
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-align: center;
+        font-family: "Montserrat ";
+        border: 1px solid black;
+        border-radius: 10px;
+        text-wrap: nowrap;
+        background: white;
+        height: 30px;
+        width: 35px;
+        &:hover {
+          background: white;
+          color: black;
+          cursor: pointer;
+        }
+      }
+      .redirect-second {
+        width: 90%;
+        font-size: 1.2rem;
+        color: black;
+        font-family: "Montserrat ";
+        max-width: 550px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1280px) {
-    .card-header{
-        padding: 50px;
-        .ffsolutec{
-            font-size: 3rem;
-        }
+  .card-header {
+    padding: 50px;
+    .ffsolutec {
+      font-size: 3rem;
     }
-   
+  }
+}
+
+.contact-me {
+  color: black;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.4375rem;
+  text-align: center;
+  padding: 10px 40px;
+  // border: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba(33, 208, 179, 0.616);
+  border-radius: 10px;
+  text-wrap: nowrap;
+
+  &:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+  }
 }

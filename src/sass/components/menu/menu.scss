@@ -1,57 +1,64 @@
-.menu{
-    background-color: black;
-    width: 100%;
+.menu {
+  width: 100%;
 
-    height: 100px;
-    box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px;
-    .links{
-        width: 100%;
-        max-width: 1280px;
-        .logo{
-            width: 100px;
-        }
-        .list-links{
-            
-            width: 30%;
-            gap:  25px;
-            height: 100px;
-            padding: 10px;
-            
-            .link{
-                color: white;
-                font-size: 15px;
-                text-transform: uppercase;
-                font-weight: 600;
-                
-            }
-            .link:hover{
-                color: rgb(251, 237, 195);
-                font-size: 16px;
-                text-transform: uppercase;
-                font-weight: 600;
-                
-            }
-           
-        }
-        .contact-me{
-                
-            color: white;
-            font-size: 0.875rem;
-            font-weight: 700;
-            line-height: 1.4375rem;
-            text-align: center;
-            padding: 10px 40px;
-            border: 1px solid rgba(255, 255, 255,0.2);
-            border-radius: 10px;
-            text-wrap: nowrap;
-            background: none;
-            &:hover {
-              background: white;
-              color: black;
-              cursor: pointer;
-            }
-          
-          
+  height: 100px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px;
+  .links {
+    width: 100%;
+    max-width: 1280px;
+    .logo {
+      width: 100px;
     }
+    .list-links {
+      width: 30%;
+      gap: 25px;
+      height: 100px;
+      padding: 10px;
+
+      .link {
+        color: black;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      .link:hover {
+        color: rgb(251, 237, 195);
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
     }
+    // .contact-me {
+    //   color: black;
+    //   font-size: 0.875rem;
+    //   font-weight: 700;
+    //   line-height: 1.4375rem;
+    //   text-align: center;
+    //   padding: 10px 40px;
+    //   border: 1px solid rgba(0, 0, 0, 0.5);
+    //   border-radius: 10px;
+    //   text-wrap: nowrap;
+    //   background: none;
+    //   &:hover {
+    //     background: white;
+    //     color: black;
+    //     cursor: pointer;
+    //   }
+    // }
+  }
+}
+
+.header {
+  background: radial-gradient(
+    circle at center,
+    rgba(33, 208, 179, 0.1),
+    rgba(33, 208, 179, 0.2),
+    rgba(33, 208, 179, 0.3)
+  );
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
