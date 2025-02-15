@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Typography, Button, IconButton } from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const AboutSection = () => {
   return (
@@ -30,7 +29,6 @@ const AboutSection = () => {
               className="buttonAbout"
             >
               Fale com um especialista
-              <ArrowForwardIcon />
             </IconButton>
           </a>
         </div>
