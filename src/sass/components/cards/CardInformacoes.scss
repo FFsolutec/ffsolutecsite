@@ -1,68 +1,62 @@
-.CardInformacoes{
+.CardInformacoes {
+  width: 100%;
+  gap: 40px;
+  padding: 48px;
+
+  .projeto {
     width: 100%;
-    gap: 40px;
-    padding: 48px;
-    
-    .projeto{
-      width: 100%;
-      max-width: 600px;
+    max-width: 600px;
+    gap: 20px;
+    .title {
+      color: white;
+      font-size: 35px;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+    .subTitle {
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: none;
+      line-height: 1.1;
+    }
+    .listItens {
+      gap: 20px;
+      .itens {
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 10px;
         gap: 20px;
-        .title{
+
+        .itensImg {
+          width: 20px;
+        }
+        .itensText {
           color: white;
-          font-size: 35px;
-          font-weight: 900;
+          font-size: 15px;
+          font-weight: 500;
           text-transform: uppercase;
           line-height: 1.1;
-          
+          margin: 0;
         }
-        .subTitle{
-          color: white;
-          font-size: 18px;
-          font-weight: 600;
-          text-transform: none;
-          line-height: 1.1;
-         
-        }
-        .listItens{
-          
-           gap: 20px;
-            .itens{
-              width: 100%;
-              border: 1px solid white;
-              border-radius: 10px;
-              padding: 10px;
-              gap: 20px;
-              
-              .itensImg{
-                width: 20px;
-              }
-              .itensText{
-                color: white;
-                font-size: 15px;
-                font-weight: 500;
-                text-transform: uppercase;
-                line-height: 1.1;
-                margin: 0;
-              }
-            }
-        }
-    }
-    .imgContent{
-      width: 100%;
-      max-width: 500px;
-    }
-    @media (max-width: 999px) {
-      flex-direction: column-reverse;
-      .imgContent,.projeto{
-        
-        max-width: 100%;
       }
-      
     }
-    
   }
-
-  .reverse{
-    flex-direction: row-reverse;
+  .imgContent {
+    width: 100%;
+    max-width: 500px;
   }
+  @media (max-width: 999px) {
+    flex-direction: column-reverse;
+    .imgContent,
+    .projeto {
+      max-width: 100%;
+    }
+  }
+}
 
+.reverse {
+  flex-direction: row-reverse;
+}

@@ -1,23 +1,50 @@
-import { Container } from "@mui/material";
+const CardListServicos = () => {
+  const servicos = [
+    {
+      titulo: "Desenvolvimento de Software",
+      descricao:
+        "Criamos softwares personalizados para atender às necessidades específicas do seu negócio, garantindo eficiência e escalabilidade.",
+    },
+    {
+      titulo: "Criação de Sites",
+      descricao:
+        "Desenvolvemos websites modernos, responsivos e otimizados para SEO, garantindo uma presença online forte e impactante.",
+    },
+    {
+      titulo: "Desenvolvimento de Aplicativos",
+      descricao:
+        "Criamos aplicativos para Android e iOS, focados na melhor experiência do usuário e no desempenho de alto nível.",
+    },
+    {
+      titulo: "BOTS Telegram/WhatsApp",
+      descricao:
+        "Automatizamos processos com bots inteligentes para WhatsApp e Telegram, otimizando o atendimento e a comunicação com seus clientes.",
+    },
+    {
+      titulo: "Suporte a WordPress",
+      descricao:
+        "Oferecemos suporte especializado para WordPress, desde manutenção e otimização até desenvolvimento de temas e plugins personalizados.",
+    },
+    {
+      titulo: "Consultoria em Sistemas e Automação",
+      descricao:
+        "Ajudamos sua empresa a implementar sistemas automatizados e eficientes, reduzindo custos e aumentando a produtividade.",
+    },
+  ];
 
-const CardSobre = () => {
   return (
-    <section className="sobre " id="contato">
-      <Container>
+    <div>
+     
+      {servicos.map((servico) => (
         <div className="CardSobre d-flex j-sb a-c j-c">
           <img className="imgContent" src="/imgs/sobre.png" />
           <div className="projeto  d-flex j-c a-s  f-c">
             <div className="listItens d-flex  f-c">
               <div className="itens d-flex a-c ">
                 <img src="/imgs/Icon.png" className="itensImg" />
-                <p className="itensText">Sobre </p>
+                <p className="itensText">{servico.titulo} </p>
               </div>
-              <p className="sobre">
-                A FFsolutec assim como você esta buscando seu lugar no mundo
-                digital. Nessas busca decidemos que o melhor e crescer junto de
-                nossos clientes assim existimos para que as empresas prosperem,
-                se antecipem e se adaptem às constantes mudanças da era digital.
-              </p>
+              <p className="sobre">{servico.descricao}</p>
 
               <div className="itens d-flex a-c ">
                 <img src="/imgs/Icon.png" className="itensImg" />
@@ -50,19 +77,19 @@ const CardSobre = () => {
                 </div>
 
                 <a
-                  className="buttonContato buttonPadrao"
+                  className="buttonContato"
                   href="https://api.whatsapp.com/send?phone=5521999991286&amp;text=Bom%20dia%20gostaria%20de%20saber%20sobre%20os%20serviços%20da%20FFSOLUTEC!"
                   target="_blank"
                 >
-                  Contato
+                  CONTATO
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </Container>
-    </section>
+      ))}
+    </div>
   );
 };
 
-export default CardSobre;
+export default CardListServicos;

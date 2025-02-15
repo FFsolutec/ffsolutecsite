@@ -1,74 +1,69 @@
-.CardServicos{
+.CardServicos {
+  width: 100%;
+  gap: 50px;
+  padding: 50px 0px;
+  height: 100%;
+  position: relative;
+
+  .projeto {
     width: 100%;
-    gap: 50px;
-    padding: 50px 0px;
-    height: 100%;
-    position: relative;
-    
-    .projeto{
+    max-width: 550px;
+    gap: 20px;
+    .title {
+      color: white;
+      font-size: 30px;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+    .subTitle {
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: none;
+      line-height: 1.1;
+    }
+    .listItens {
       width: 100%;
-      max-width: 550px;
+
+      gap: 20px;
+      .itens {
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 10px;
         gap: 20px;
-        .title{
-          color: white;
-          font-size: 30px;
-          font-weight: 900;
-          text-transform: uppercase;
-          line-height: 1.1;
-          
+        .itensImg {
+          width: 20px;
         }
-        .subTitle{
+        .itensText {
           color: white;
           font-size: 15px;
-          font-weight: 600;
-          text-transform: none;
+          font-weight: 500;
+          text-transform: uppercase;
           line-height: 1.1;
-         
         }
-        .listItens{
-            width: 100%;
-       
-          gap: 20px;
-            .itens{
-              width: 100%;
-              border: 1px solid white;
-              border-radius: 10px;
-              padding: 10px;
-              gap: 20px;
-              .itensImg{
-                width: 20px;
-              }
-              .itensText{
-                color: white;
-                font-size: 15px;
-                font-weight: 500;
-                text-transform: uppercase;
-                line-height: 1.1;
-              }
-            }
-        }
-    }
-    .imgContent{
-      width: 100%;
-      max-width: 500px;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 40px 40px 0px 40px
-    }
-
-      @media (max-width: 999px) {
-        flex-direction: column-reverse;
-        .imgContent,.projeto{
-        
-          max-width: 100%;
-        }
-        
       }
-    
+    }
+  }
+  .imgContent {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px 40px 0px 40px;
   }
 
-  .reverse{
-    flex-direction: row-reverse;
+  @media (max-width: 999px) {
+    flex-direction: column-reverse;
+    .imgContent,
+    .projeto {
+      max-width: 100%;
+    }
   }
+}
 
+.reverse {
+  flex-direction: row-reverse;
+}

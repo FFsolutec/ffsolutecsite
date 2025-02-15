@@ -27,38 +27,41 @@ const HomePageView = () => {
               src="/imgs/testeImg.jpg"
               alt="..."
             />
-            <div className="intro-text left-0 text-left bg-faded p-5 rounded">
-              <h2 className="section-heading mb-3">
-                <span
-                  className="section-heading-lower"
-                  style={{ color: "white" }}
-                >
-                  A Solução Ideal para Sua Empresa
-                </span>
-              </h2>
-              <p className="mb-2 text-decoration">
-                Se você é proprietário de uma pequena ou média empresa, ou um
-                empreendedor autônomo enfrentando desafios como:
-                <br />
-                Problemas com Design e Experiência do Usuário <br /> Marketing e
-                Visibilidade Online <br />
-                Tempo e Recursos Limitados <br /> <br /> Nós estamos aqui para
-                ajudar! <br /> Na FFSOLUTEC, entendemos suas necessidades e
-                oferecemos soluções personalizadas para transformar esses
-                obstáculos em oportunidades de crescimento. Deixe-nos cuidar do
-                design e da experiência do usuário, impulsionar seu marketing
-                digital e otimizar o uso do seu tempo e recursos, para que você
-                possa focar no que faz de melhor: crescer seu negócio.
-              </p>
+            <div style={{ background: "white" }}>
+              <div className="intro-text left-0 text-left bg-faded p-5 rounded">
+                <h2 className="section-heading mb-3">
+                  <span
+                    className="section-heading-lower"
+                    style={{ color: "black", fontWeight: "600" }}
+                  >
+                    A Solução Ideal para Sua Empresa
+                  </span>
+                </h2>
+                <p className="mb-2 text-decoration" style={{ color: "black" }}>
+                  Se você é proprietário de uma pequena ou média empresa, ou um
+                  empreendedor autônomo enfrentando desafios como:
+                  <br />
+                  Problemas com Design e Experiência do Usuário <br /> Marketing
+                  e Visibilidade Online <br />
+                  Tempo e Recursos Limitados <br /> <br /> Nós estamos aqui para
+                  ajudar! <br /> Na FFSOLUTEC, entendemos suas necessidades e
+                  oferecemos soluções personalizadas para transformar esses
+                  obstáculos em oportunidades de crescimento. Deixe-nos cuidar
+                  do design e da experiência do usuário, impulsionar seu
+                  marketing digital e otimizar o uso do seu tempo e recursos,
+                  para que você possa focar no que faz de melhor: crescer seu
+                  negócio.
+                </p>
 
-              <div className="intro-button mx-auto">
-                <a
-                  className="btn btn-primary btn-xl button-contato"
-                  href="https://api.whatsapp.com/send?phone=5521999991286&text=Bom%20dia%20gostaria%20de%20saber%20sobre%20os%20serviços%20da%20FFSOLUTEC!"
-                  target="_blank"
-                >
-                  Entre em contato
-                </a>
+                <div className="intro-button mx-auto">
+                  <a
+                    className="btn btn-primary btn-xl button-contato"
+                    href="https://api.whatsapp.com/send?phone=5521999991286&text=Bom%20dia%20gostaria%20de%20saber%20sobre%20os%20serviços%20da%20FFSOLUTEC!"
+                    target="_blank"
+                  >
+                    Fale com um Especialista
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -85,14 +88,13 @@ const HomePageView = () => {
                   Na FFsolutec, entendemos que você está em busca de seu lugar
                   no mundo digital. Compartilhamos essa jornada com você,
                   dedicando-nos a fornecer um serviço de qualidade, um ambiente
-                  acolhedor e, acima de tudo, soluções excepcionais. Nossa
-                  missão é garantir que sua empresa prospere, se antecipe e se
-                  adapte às constantes mudanças da era digital. Trabalhamos lado
-                  a lado com nossos clientes, oferecendo serviços completos de
-                  marketing digital, manutenção, desenvolvimento e suporte a
-                  sistemas. Se você não estiver satisfeito, por favor, nos avise
-                  e faremos tudo o que for possível para resolver o problema.
-                  Estamos aqui para garantir seu sucesso no mundo digital.
+                  acolhedor e, acima de tudo, soluções excepcionais.
+                </p>
+                <br />
+                <br />
+                <p className="mb-0 description" style={{ textAlign: "center" }}>
+                  ✅ Soluções personalizadas ✅ Atendimento humanizado ✅
+                  Tecnologia de ponta ✅ Resultados comprovados
                 </p>
               </div>
             </div>

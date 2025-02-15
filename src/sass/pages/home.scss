@@ -11235,6 +11235,10 @@ p {
   font-size: 3rem;
   font-weight: 100;
   color: black;
+
+  @media (min-width: 992px) {
+    font-size: 2rem;
+  }
 }
 
 .bg-faded {
@@ -11346,7 +11350,9 @@ p {
 }
 .intro-text {
   position: relative;
-  background-color: rgba(black, 1);
+
+  background-color: rgba(#c4f4ec, 1);
+  color: black;
 }
 @media (min-width: 992px) {
   .intro .intro-img {
@@ -11356,7 +11362,7 @@ p {
   .intro .intro-text {
     left: 0;
     width: 60%;
-    margin-top: 3rem;
+    margin-top: 1rem;
     position: absolute;
   }
   .intro .intro-text .intro-button {
@@ -11420,4 +11426,407 @@ p {
 
 .address strong {
   font-size: 1.2rem;
+}
+
+.newHome {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    text-align: center;
+    background: url("../../../public/imgs/backgrundHeroHeader.png") no-repeat
+      center center;
+    background-size: cover;
+    padding: 100px 50px;
+    height: 100%;
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .heroTitle {
+      font-weight: 600;
+      font-size: 6rem;
+      text-align: left;
+      color: #ffbd59;
+    }
+    .heroSubTitle {
+      font-weight: 600;
+      font-size: 1.5rem;
+      width: 100%;
+      max-width: 500px;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .buttonSaibaMais {
+      width: 100%;
+      max-width: 400px;
+      padding: 15px;
+      background: linear-gradient(90deg, #000000, #c89116);
+    }
+  }
+
+  .servicesSection,
+  .clientsSection {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .servicesSection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #000000, rgba(#c89116, 1));
+    .servicosRealizados {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+      &-left {
+        display: flex;
+
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        img {
+          width: 100%;
+          max-width: 600px;
+        }
+      }
+      &-right {
+        .ListService {
+          .ListItemService {
+            .ListServiceItemText {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    padding: 100px 50px;
+    height: 100%;
+    flex-wrap: wrap;
+
+    .container {
+      padding: 20px;
+      display: flex;
+
+      align-items: center;
+      justify-content: start;
+      flex-wrap: wrap;
+      gap: 60px;
+      img {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+    .contentEmpresa {
+      width: 500px;
+      color: white;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 20px;
+      .title {
+        color: white;
+        font-size: 40px;
+        font-family: 600;
+        color: #c89116;
+        text-transform: uppercase;
+      }
+      .subTitle {
+        color: white;
+        text-align: left;
+      }
+
+      .buttonAbout {
+        width: 100%;
+        max-width: 250px;
+        padding: 10px;
+        background: linear-gradient(90deg, #000000, #c89116);
+        border-radius: 5px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+  }
+
+  .servicesSolution {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("/imgs/serviceSolution.png") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .overlay {
+      width: 80%;
+      height: 80%;
+      background: linear-gradient(180deg, #000000, rgba(#c89116, 0.2));
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+
+      @media (max-width: 760px) {
+        width: 90%;
+        height: 100%;
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .left {
+        flex: 1;
+        max-width: 40%;
+
+        .title {
+          font-weight: bold;
+          color: white;
+        }
+
+        .subtitle {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+          color: white;
+        }
+
+        .social-icons {
+          display: flex;
+          gap: 1rem;
+          margin-top: 1rem;
+
+          svg {
+            font-size: 2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: #ffcc00;
+            }
+          }
+
+          @media (max-width: 860px) {
+            display: none;
+          }
+        }
+      }
+      .social-icons-mobile {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+        svg {
+          font-size: 2rem;
+          cursor: pointer;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #ffcc00;
+          }
+        }
+
+        @media (min-width: 860px) {
+          display: none;
+        }
+      }
+      .right {
+        flex: 1;
+        max-width: 50%;
+
+        .servicesList {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .serviceItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+            padding: 5px 0px;
+            font-size: 1.3rem;
+            border-bottom: 1px solid white;
+          }
+        }
+      }
+
+      @media (max-width: 860px) {
+        flex-direction: column;
+        text-align: center;
+
+        .left,
+        .right {
+          width: 100%;
+          max-width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          .title {
+            text-align: left;
+          }
+        }
+
+        .right {
+          border-top: 1px solid white;
+          margin-top: 1rem;
+        }
+        .servicesList {
+          gap: 5px;
+
+          .serviceItem {
+            justify-content: center;
+
+            hr {
+              display: none; // Remove as linhas separadoras no mobile
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .overlay {
+        padding: 0.5rem;
+      }
+
+      .title {
+        font-size: 1.8rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
+
+      .servicesList {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .menssagemCeo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, #c89116, #000000);
+    .menssagemArea {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .menssagem {
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+      }
+      .about {
+        color: rgba(white, 0.5);
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+
+    hr {
+      width: 100%;
+      padding: 1px;
+      background: white;
+      margin: 30px 0px;
+    }
+    @media (max-width: 960px) {
+      .menssagemArea {
+        .menssagem {
+          color: white;
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+    }
+
+    @media (max-width: 760px) {
+      height: auto;
+      padding: 100px 0px;
+
+      .menssagemArea {
+        .menssagem {
+          color: white;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+
+        .about {
+          color: rgba(white, 0.5);
+          font-size: 0.8rem;
+          text-align: center;
+        }
+      }
+    }
+
+    @media (max-width: 500px) {
+      .menssagemArea {
+        .menssagem {
+          color: white;
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+.buttonPadrao {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  background: linear-gradient(90deg, #000000, #c89116);
+  border-radius: 5px;
+  font-size: 15px;
 }

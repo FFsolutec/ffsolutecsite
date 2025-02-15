@@ -2,7 +2,7 @@ import Menu from "../Menu";
 import animationData from "../../../../public/headerAnimation.json"; // Altere para o caminho correto
 import Lottie from "lottie-react";
 
-const CardHeader = () => {
+const CardHeaderServicos = () => {
   return (
     <div className="header">
       <Menu />
@@ -49,14 +49,16 @@ const CardHeader = () => {
             </style>
 
             <div className="redirect-links d-flex f-wrap">
-              <p className="redirect-first">
-                Soluções Digitais Inteligentes para Impulsionar seu Negócio
-              </p>
+              <p className="redirect-first">Nossos Serviços</p>
 
               <p className="redirect-second">
-                Criamos soluções digitais que geram resultados. Desenvolvimento
-                de software, websites e estratégias de marketing para
-                transformar sua empresa no digital.
+                Transformamos ideias em soluções digitais de alto impacto!
+                <br />
+                Desenvolvemos softwares sob medida, criamos websites responsivos
+                e elaboramos estratégias de marketing digital para fortalecer
+                sua presença online e impulsionar seus resultados. <br />
+                Conte com a nossa expertise para levar o seu negócio ao próximo
+                nível.
               </p>
             </div>
 
@@ -82,4 +84,4 @@ const CardHeader = () => {
   );
 };
 
-export default CardHeader;
+export default CardHeaderServicos;
