@@ -38,7 +38,23 @@ const Menu = () => {
   ];
 
   return (
-    <AppBar position="static" className="menu">
+    <AppBar
+      position="static"
+      className="menu"
+      sx={{
+        width: "100%",
+        top: 0,
+        height: "auto",
+        boxShadow: "rgba(255, 255, 255, 0.3) 0px 10px 10px -10px",
+        zIndex: 10,
+        background:
+          "linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(200, 145, 22, 0.2))",
+        padding: "10px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+      }}
+    >
       <Toolbar
         sx={{
           display: "flex",
